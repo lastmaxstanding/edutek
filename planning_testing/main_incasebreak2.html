@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edu Tech</title>
+
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Require JS Implementation Script -->
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+	<script data-main="/scripts/config/config" src="/scripts/require/requirejs.js"></script>
+
+	<script>
+		require(['../scripts/config/config.js'], function(){
+			require(['../jquery/jqueryfile']);
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/assets/reset.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="/assets/test/style-responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/about.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/auth.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/contact.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/desk_action_buttons.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/faq.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/footer.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/home.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/logo_row.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/students_desk.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/teachers_desk.css">
+
+	<link rel="stylesheet" type="text/css" href="/assets/topheader.css">
+
+	<!-- Space for Font Codes .. Currently Empty -->
+
+	
+
+	<link rel="stylesheet" type="text/css" href="/assets/test/style3.css">
+
+
+</head>
+<body>
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+<!-- Header Section with top logo and Login/Logout Button -->
+
+	<section>
+		
+		<header class="header black-bg">
+	      <div class="sidebar-toggle-box">
+	          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+	      </div>
+
+	        <!--logo start-->
+
+		    <a class="logo"><img src="logo/EduTech2.png" class="img-rounded corners" width="90"></a>
+
+		    <!--logo end-->
+
+	        <!--  notification start -->
+	        <ul class="nav top-menu">
+	            <div class="top-menu">
+	              <ul class="nav pull-right top-menu">
+	                    <li>
+	                    	<a class="logout" id="logoutButton">
+	                    		Logout
+	                    	</a>
+	                    </li>
+	              </ul>
+	                <ul class="nav pull-right top-menu">
+	                    <li>
+	                    	<a class="logout" id="loginButton">
+	                    		Login
+	                    	</a>
+	                    </li>
+	              </ul>
+	            </div>
+	        </ul>
+	    </header>
+
+	</section>
+
+<!-- Header section end -->
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+</div>
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+
+<!-- NEXT SECTION START -> BODY WHICH CONTAINS CONTAINER FOR NAV BAR AND BODY -->
+
+
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- Start .mainBody div -->
+
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 mainBody" style="padding:0; margin:0;">
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+<!-- START NAV BAR, THIS IS ON LEFT SIDE OF PANNEL -->
+
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+
+<!-- Start naviBar div -->
+
+	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 naviBar" style="background: #424a5d; padding:0; margin:0;">
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+<!-- NAVBAR CODE BEGIN HERE -->
+
+	<aside>
+	    <div id="sidebar"  class="nav-collapse col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width: 100%;">
+
+	        <!-- sidebar menu start-->
+	        <ul class="sidebar-menu" id="nav-accordion">
+
+	            <p class="centered" style="text-align: center;">
+	            	<a href="/"><img src="logo/EduTechIcon.png" class="img-rounded corners" width="60"></a>
+	            </p>
+
+	            <h5 class="centered" style="text-align: center;">
+	            <strong style="color: white;">
+	            	Professor Name
+	            </strong>
+	            </h5>
+
+	            <!-- Ramdom Seating -->
+	            <li class="mt">
+	                <a class="sub-menu">
+	                    <i class="fa fa-dashboard"></i>
+	                    <span id="selectRandomSeating">Random Seating</span>
+	                </a>
+	            </li>
+
+	            <!-- Ascending Seating -->
+	            <li class="sub-menu">
+	                <a href="javascript:;" >
+	                    <i class="fa fa-desktop" ></i>
+	                    <span id="selectAscSeating">Ascending Seating</span>
+	                </a>
+	            </li>
+	                  
+	            <!-- Descending Seating -->
+	            <li class="sub-menu">
+	                <a href="javascript:;" >
+	                    <i class="fa fa-cogs"></i>
+	                    <span id="selectDescSeating">Descending Seating</span>
+	                </a>
+	            </li>
+	           
+	            <!-- Random Participation -->
+	            <li class="sub-menu">
+	                <a href="javascript:;" >
+	                    <i class="fa fa-book"></i>
+	                    <span id="selectRanPart">Random Participation</span>
+	                </a>
+	            </li>
+	            
+	            <!-- Random Groups -->
+	            <li class="sub-menu">
+	                <a href="javascript:;" >
+	                    <i class="fa fa-book"></i>
+	                    <span id="selectRanGroups">Random Groups</span>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>    
+	</aside>
+
+<!-- NAVBAR CODE END HERE -->
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- End .naviBar div -->
+
+	</div>
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+<!-- START BODY WHICH IS CODE THAT WILL BE DELIVERED SYNAMICALLY VIA HANDLEBARS -->
+
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- Start .bodyHolder div -->
+
+	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 naviBar bodyHolder main-content" style="margin-top:70px; max-width:100%">
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+<!-- Body code start here -->
+
+
+	{{{ body }}}
+
+	
+<!-- Body code end here -->
+
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- End .bodyHolder div -->
+
+	</div>
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+<!-- DIV </> BELOW ENDS MAIN BODY SECTION WHICH CONTAINS NAVBAR AND BODY FROM HANDLEBARS AND FOOTER -->
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- End .mainBody div -->
+
+</div>
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+<!-- CODE FOR FOOTER STARTS BELOW -->
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// START HERE -->
+
+<!-- Footer code start here -->
+
+
+	<footer id="footer2" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+		<span id="copyRight"> &copy; 2016-2017 <strong> EduTech </strong> || UCF Coding Bootcamp 2016 </span>
+
+		<br>
+
+		<div id="footerButtons">
+
+			<button class="btn btn-default" id="aboutET">
+				About EduTech
+			</button>
+
+			<button class="btn btn-default" id="faqs">
+				FAQ's
+			</button>
+
+			<button class="btn btn-default" id="contactUs">
+				Connect With Us
+			</button>
+
+		</div>
+
+	</footer>
+
+<!-- Footer code end here -->
+
+
+<!-- /////////////////////////////////////
+DON'T DELETE <> </> BETWEEN THESE  BLOCKS OF ///
+///////////////////////////////////// END HERE -->
+
+
+</body>
+</html>

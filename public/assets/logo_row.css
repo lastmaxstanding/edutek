@@ -1,0 +1,30 @@
+/*Used to style where logo is added into app under the top header.. currently the Logo has not been added to the main page.*/
+
+
+#h1Header{
+    /*margin-top: 100px;*/ /*Only needed if we have fixed topheader*/
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.logoOnly {
+    display: block;
+    text-align: center;
+    background-color: #ffd777;
+    border-bottom: 1px solid #c9aa5f;
+
+}
+}
+
+.logoImg {
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+}
+.circular-image {
+
+  border-radius:  10%;
+
+
+  }

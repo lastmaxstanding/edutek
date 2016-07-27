@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<body>
+
+<form>
+
+<input type="button" value="groups" id="button" class="mainb"/>
+<input type="number" name="number" id="chunk" class="chunky"/>
+
+</form> 
+
+<p id="container" class="main">
+
+</p>
+
+<style type="text/css">
+
+.mainb {
+	position: relative;
+	top: 400px;
+    left: 20px;
+	height: 200px; 
+	width: 200px; 
+	border: 5px solid black;
+	font-size: 20px;
+	font-style: bold;
+	background-color: #c442bf
+
+}
+
+.chunky {
+	position: relative;
+	top: 400px;
+    left: 50px;
+	height: 50px; 
+	width: 50px; 
+	border: 5px solid black;
+	font-size: 20px;
+	font-style: bold;
+	background-color: #c442bf
+
+}
+
+
+
+.main {
+	 
+    margin-left: center;
+    margin-right: center;
+    margin-top: 0px;
+    text-align: center;
+   	font-size: 30px;
+   	
+   	
+} 
+
+</style>
+
+<script type="text/javascript">
+
+function Shuffle(a) {
+	for(var j, x, i = a.length; //var j = 0; //variables
+		i; //j < a.length; //condition - it's going to run while it's true
+		j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x); //j++ - it's going to increment by that
+	return a;
+};
+// for (var i = 0; i < a.length; i++){}
+var roster = [
+	"Barry Allen",
+	"Bruce Banner",
+	"Clint Barton",
+	"Arthur Curry",
+	"Bobby Drake",
+	"Ben Grimm",
+	"Clark Kent", 
+	"Scott Lang",
+	"Lex Luthor",
+	"Pietro Maximoff",
+	"Wanda Maximoff",
+	"Matt Murdock",
+	"Edward Nigma",
+	"Otto Octavius",
+	"Norman Osborn",
+	"Peter Parker",
+	"Kitty Pride",
+	"Diana Prince",
+	"Harley Quinn",
+	"Peter Rasputin",
+	"Reed Richards",
+	"Steve Rogers",
+	"Natasha Romanoff", 
+	"Tony Stark",
+	"Victor Stone", 
+	"Johnny Storm", 
+	"Susan Storm",
+	"Jennifer Walters",
+	"Bruce Wayne", 
+	"Wade Wilson"
+	
+];
+var randomShuff = Shuffle(roster); 
+var i = 0
+console.log(randomShuff);
+
+/*function activate() {
+	if(i == randomShuff.length) i = 0;
+	return document.getElementById("container").innerHTML = randomShuff[i++];
+	console.log(activate());
+	
+}
+*/
+
+
+ var createRosterGroups = function (arr, chunkSize) {
+    var groups = [], i;
+    chunkSize = parseInt(chunkSize)
+    for (i = 0; i < roster.length; i += chunkSize) {
+        groups.push(roster.slice(i, i + chunkSize));
+    }
+
+    return groups;
+
+}
+
+
+
+// var groupedArray = createRosterGroups(roster,4);
+
+// console.log(groupedArray[1])
+
+$('#button').on('click', function(){
+	var chunk = $('#chunk').val();
+	activate(chunk)
+});
+
+function activate(chunkSize) {
+
+	var groupedArray = createRosterGroups(randomShuff, chunkSize);
+
+	for (var d = 0; d < groupedArray.length; d++){
+		console.log("each array " + groupedArray[d]); //each array in list
+		for (var x = 0; x < groupedArray[d].length; x++) {
+			console.log("each member " + groupedArray[d][x]); // each member in array
+			
+		}
+
+	//var heroGroup = groupedArray[d];
+	//var i = 0
+	//if (i == heroGroup.length) i = 0;
+	return document.getElementById("container").innerHTML = groupedArray.join('<br><br>');
+	//console.log("This " + heroGroup);
+
+	}
+
+	
+
+	//var groupSize = document.getElementById("chunk").value;
+
+	//if(groupSize == "" || groupSize == 0 || groupSize > 30 || groupSize > roster) { 
+
+		//return alert("Please select a manageable group buddy!");
+
+
+	//} else {
+
+	//var groupedRoster = createRosterGroups(roster, groupSize);
+
+	//console.log(groupedArray);
+		//var i = 0
+		//console.log(groupedRoster);
+
+		//if(i == groupedArray.length) i=0;
+
+	//return document.getElementById("container").innerHTML = grouped[i++];
+	}
+
+
+
+
+
+
+
+/* function doWork(){
+  var referee = 'Jon'; 
+  var peeps = ['Zach', 'Rachael', 'Reyna', 'Gloria', 'Zeus', 'Leighton', 'Tim', 'Will', 'Emily', 'Eric', 'Bruce', 'Real', 'Carly', 'Tomas'];
+  var teamNames = [
+    'group1', 'group1', 'group1', 
+    'group2', 'group2', 'group2', 
+    'group3', 'group3', 'group3', 
+    'group4', 'group4', 'group4', 
+    'group5', 'group5', 'group5'
+  ]
+
+  var teams = {};
+  peopleCount = peeps.length;
+  for (var i = 0; i < peopleCount; i++){
+    var randomPeepIndex = Math.floor(Math.random()*(peeps.length - 1));
+    peep = peeps.splice(randomPeepIndex, 1)[0];
+    var randomTeamIndex = Math.floor(Math.random()*(peeps.length - 1));
+    
+    team = teamNames.splice(randomTeamIndex, 1)[0];    
+    teams[team] = teams[team] || []
+    teams[team].push(peep);
+  }
+  return teams;
+}
+
+console.log(doWork()); */ 
+// up above works but need to make groups
+
+//---------------------------------------------------------
+
+/* function splitTeams(names, teams_count) {
+    var teams = [];
+    while (teams_count > 0) {
+    teams.push(names.splice(0, Math.floor(names.length/teams_count)))
+    teams_count--;
+    }
+    return teams
+
+    console.log(splitTeams("carlos", 4));
+}
+
+*/
+
+//----------------------------------------------------------
+
+/* function Shuffle(a) {
+	for(var j, x, i = a.length; i; j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x);
+	return a;
+};
+
+var roster = [
+	"Barry Allen",
+	"Bruce Banner",
+	"Clint Barton",
+	"Arthur Curry",
+	"Bobby Drake",
+	"Ben Grimm",
+	"Clark Kent", 
+	"Scott Lang",
+	"Lex Luthor",
+	"Pietro Maximoff",
+	"Wanda Maximoff",
+	"Matt Murdock",
+	"Edward Nigma",
+	"Otto Octavius",
+	"Norman Osborn",
+	"Peter Parker",
+	"Kitty Pride",
+	"Diana Prince",
+	"Harley Quinn",
+	"Peter Rasputin",
+	"Reed Richards",
+	"Steve Rogers",
+	"Natasha Romanoff", 
+	"Tony Stark",
+	"Victor Stone", 
+	"Johnny Storm", 
+	"Susan Storm",
+	"Jennifer Walters",
+	"Bruce Wayne", 
+	"Wade Wilson"
+	
+];
+var randomShuff = Shuffle(roster); 
+var i = 0
+
+function activate() {
+	if(i == randomShuff.length) i = 0;
+	return document.getElementById("container").innerHTML = randomShuff[i++];
+	console.log(activate());
+	
+} */
+
+
+
+
+
+
+
+
+
+	
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EduTech</title>
+        
+    <!-- Reset -->
+	<link rel="stylesheet" type="text/css" href="../public/assets/reset.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+
+	<!-- Jquery Source -->
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+    </head>
+    
+    <body>
+    
+    <div class=" row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+        <div id="functionButtonSide" class="col-xs-12 col-sm-12 col-md-2 col-lg-2 seatingOptionButtons">
+            <div class="row">
+                <button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Seating </button>
+                <button id="selectAscSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Ascending Seating </button>
+                <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Descending Seating </button>
+                <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Participation </button>
+                <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Groups </button>
+                <button id="selectClear" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Clear </button>
+            </div>
+        </div>
+        
+        <div id="desksSide" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            
+            <div class="row deskRow1">
+              <div id="tdesk1" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 teachersDesksWide"> Teacher Desk 1 </div>
+              <div id="tdesk2" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 teachersDesksWide"> Teacher Desk 2 </div>
+              <div id="tdesk3" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 teachersDesksWide"> Teacher Desk 3 </div>
+            </div>
+            
+            <br>
+            
+            <div class="row deskRow2">
+                    <div id="tdesk4" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 4 </div>
+                   
+                    <div id="desk1" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 1 </div>
+                    <div id="desk2" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 2 </div>
+                    <div id="desk3" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 3 </div>
+                    <div id="desk4" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 4 </div>
+                    <div id="desk5" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 5 </div>
+                     
+                    <div id="tdesk12" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 12 </div>
+                        
+                    <div id="desk6" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 6 </div>
+                    <div id="desk7" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 7 </div>
+                    <div id="desk8" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 8 </div>
+                    <div id="desk9" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 9 </div>
+                    <div id="desk10" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 10 </div>
+            </div>
+            
+            <div class="row deskRow3">
+                    <div id="tdesk5" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 4 </div>
+                   
+                    <div id="desk11" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 11 </div>
+                    <div id="desk12" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 12 </div>
+                    <div id="desk13" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 13 </div>
+                    <div id="desk14" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 14 </div>
+                    <div id="desk15" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 15 </div>
+                     
+                    <div id="tdesk11" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 11 </div>
+                        
+                    <div id="desk16" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 16 </div>
+                    <div id="desk17" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 17 </div>
+                    <div id="desk18" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 18 </div>
+                    <div id="desk19" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 19 </div>
+                    <div id="desk20" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 20 </div>
+            </div>
+            
+            <div class="row deskRow4">
+                    <div id="tdesk6" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 6 </div>
+                   
+                    <div id="desk21" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 21 </div>
+                    <div id="desk22" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 22 </div>
+                    <div id="desk23" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 23 </div>
+                    <div id="desk24" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 24 </div>
+                    <div id="desk25" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 25 </div>
+                     
+                    <div id="tdesk10" class="col-xm-1 col-sm-1 col-md-1 col-lg-1 teachersDesksTall"> Teacher Desk 10 </div>
+                        
+                    <div id="desk26" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 26 </div>
+                    <div id="desk27" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 27 </div>
+                    <div id="desk28" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 28 </div>
+                    <div id="desk29" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 29 </div>
+                    <div id="desk30" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 studentDesks"> Desk 30 </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+    <style>
+    
+        .row {
+            margin-top: 5px;
+        }
+        
+        .studentDesks {
+            border: 1px solid red;
+            height: 50px;
+            margin-top: 5px;
+            margin-left:5px;
+        }
+        
+        .teachersDesksTall {
+            height: 100%;
+        }
+        
+    </style>
+        
+    </body>
+    
+    
+</html>

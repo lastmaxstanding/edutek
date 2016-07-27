@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App</title>
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+</head>
+<body>
+
+<div id="desk1" class="desks 1">1</div>
+<div id="desk2" class="desks 2">2</div>
+<div id="desk3" class="desks 3">3</div>
+<div id="desk4" class="desks 4">4</div>
+<div id="desk5" class="desks 5">5</div>
+<div id="desk6" class="desks 5">6</div>
+<div id="desk7" class="desks 4">7</div>
+<div id="desk8" class="desks 3">8</div>
+<div id="desk9" class="desks 2">9</div>
+<div id="desk10" class="desks 1">10</div>
+<div id="desk11" class="desks 1">11</div>
+<div id="desk12" class="desks 2">12</div>
+<div id="desk13" class="desks 3">13</div>
+<div id="desk14" class="desks 4">14</div>
+<div id="desk15" class="desks 5">15</div>
+<div id="desk16" class="desks 5">16</div>
+<div id="desk17" class="desks 4">17</div>
+<div id="desk18" class="desks 3">18</div>
+<div id="desk19" class="desks 2">19</div>
+<div id="desk20" class="desks 1">20</div>
+<div id="desk21" class="desks 1">21</div>
+<div id="desk22" class="desks 2">22</div>
+<div id="desk23" class="desks 3">23</div>
+<div id="desk24" class="desks 4">24</div>
+<div id="desk25" class="desks 5">25</div>
+<div id="desk26" class="desks 5">26</div>
+<div id="desk27" class="desks 4">27</div>
+<div id="desk28" class="desks 3">28</div>
+<div id="desk29" class="desks 2">29</div>
+<div id="desk30" class="desks 1">30</div>
+
+
+
+<!-- Basic Styling -->
+
+<style type="text/css">
+	
+.desks {
+	float: left;
+	width: 18%;
+	height: 100px;
+	margin-left: 1%;
+	margin-top: 15px;
+	border: 1px solid black;	
+}
+
+</style>
+
+<!--Script Logic -->
+
+<script type="text/javascript">
+	
+	var students = [
+		{
+			id: 1,
+			firstName: "Ben",
+			lastName: "Jerry",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+		
+		{
+			id: 2,
+			firstName: "Rat",
+			lastName: "Berry",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 3,
+			firstName: "Max",
+			lastName: "Penny",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 4,
+			firstName: "Roland",
+			lastName: "Sams",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 5,
+			firstName: "Dylan",
+			lastName: "Rice",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 6,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 7,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 8,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 9,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 10,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 11,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 12,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 13,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 14,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 15,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 16,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 17,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 18,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 19,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 20,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 21,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 22,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 23,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 24,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 26,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 26,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 27,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 28,
+			firstName: "",
+			lastName: "",
+			behValue: 1,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 29,
+			firstName: "",
+			lastName: "",
+			behValue: 2,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		},
+
+		{
+			id: 30,
+			firstName: "",
+			lastName: "",
+			behValue: 3,
+			randomSeat: [],
+			ascendingSeat: [],
+			descendingSeat: [],
+			randomParticipation: [],
+			randomGroup: []
+		}
+	];
+
+	console.log(students);
+
+	var desks = [
+		$("#desk1"),
+		$("#desk2"),
+		$("#desk3"),
+		$("#desk4"),
+		$("#desk5"),
+		$("#desk6"),
+		$("#desk7"),
+		$("#desk8"),
+		$("#desk9"),
+		$("#desk10"),
+		$("#desk11"),
+		$("#desk12"),
+		$("#desk13"),
+		$("#desk14"),
+		$("#desk15"),
+		$("#desk16"),
+		$("#desk17"),
+		$("#desk18"),
+		$("#desk19"),
+		$("#desk20"),
+		$("#desk21"),
+		$("#desk22"),
+		$("#desk23"),
+		$("#desk24"),
+		$("#desk25"),
+		$("#desk26"),
+		$("#desk27"),
+		$("#desk28"),
+		$("#desk29"),
+		$("#desk30")
+	];
+
+	// var deskSelector = desks[Math.floor(Math.random()*desks.length)];
+
+	// console.log(deskSelector);
+
+for ( d=0; d<desks.length; d++) {
+
+	var randomStudents = students[Math.floor(Math.random()*students.length)];
+	
+
+	$(desks[d]).append(" " + randomStudents.firstName + " " + randomStudents.lastName);
+
+}
+
+
+</script>
+
+</body>
+</html>

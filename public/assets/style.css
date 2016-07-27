@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.row {
+  width: 100%;
+}
+.black-bg {
+    display: block;
+}
+
+.runRandomSeats, .clearRandomSeats, .viewPrevRandom, .manualOverride, .runRandomGroups, .runAscSeats, .runDescSeats, .runRandomPart, .clearRandomPart, #aboutET, #faqs, #contactUs {
+	background-color: #444c57;
+	border: none;
+	color: white;
+	text-decoration-style: solid;
+}
+
+.changeColor {
+	color: #68dff0;
+}
+
+p {
+	font-size: 13px;
+}

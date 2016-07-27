@@ -1,0 +1,29 @@
+/*CSS in this file is only used for display on the home page, before user has registered or logged in to gain access to app.*/
+
+.jumbotron{
+	background-color: transparent;
+	text-align: center;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+
+/*	margin: 0;
+	padding: 0;*/
+
+}
+
+
+
+#logoHome {
+
+   display: block;
+    margin: auto;
+    width: 40%;
+    position: relative;
+    height: auto;
+    width: 400px;
+}
+
+#welcomIntro {
+	font-size: 18px;
+}

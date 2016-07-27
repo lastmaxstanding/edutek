@@ -1,0 +1,16 @@
+CREATE DATABASE roster_db;
+
+USE roster_db;
+
+CREATE TABLE students (
+    id int NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    behavior INT NOT NULL,
+    random_seating VARCHAR(255),
+    ascending_seats VARCHAR(255),
+    descending_seats VARCHAR(255)
+    PRIMARY KEY (id)
+);
+
+SELECT * FROM students

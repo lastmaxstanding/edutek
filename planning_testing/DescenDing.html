@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to sort the array in descending order.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var ascending = [
+  "Barry Allen",
+  "Banner Bruce",
+  "Barton Clint",
+  "Curry Arthut",
+  "Bobby Drake",
+  "Grimm Ben ",
+  "Kent Clark",
+  "Lang Scott",
+  "Luthor Lex",
+  "Maximoff Pietro",
+  "Maximoff Wanda",
+  "Murdock Matt",
+  "Nigma Edward",
+  "Octavius Otto",
+  "Osborn Norman",
+  "Parker Peter",
+  "Pride Kitty",
+  "Prince Diana",
+  "Quinn Harley",
+  "Rasputin Peter",
+  "Richards Reed",
+  "Rogers Steve",
+  "Romanoff Natasha",
+  "Stark Tony",
+  "Stone Victor",
+  "Storm Johnny",
+  "Storm Susan",
+  "Walters Jennifer",
+  "Wayne Bruce",
+  "Wilson Wade",
+  "Zarta Jorge"
+
+];
+function myFunction() {
+    // ascending.sort();
+    ascending.reverse();
+    document.getElementById("demo").innerHTML = ascending;
+}
+</script>
+</script>
+
+</body>
+</html>

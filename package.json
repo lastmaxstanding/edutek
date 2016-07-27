@@ -1,0 +1,26 @@
+{
+  "name": "edutech",
+  "version": "1.0.0",
+  "description": "Application for Teachers",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehayes90/edutec_.git"
+  },
+  "author": "EduTech Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehayes90/edutec_/issues"
+  },
+  "homepage": "https://github.com/ehayes90/edutec_#readme"
+}

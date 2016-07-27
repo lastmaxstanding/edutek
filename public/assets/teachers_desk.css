@@ -1,0 +1,24 @@
+/*Used to style teachers desk*/
+
+.forTeachers {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.teachersDesksTall {
+    height: 100%;
+    height: 200px;
+}
+
+.teachersDesksTall{
+    width: 100%;
+    height: 200px;
+    bottom: 10%;
+    border-bottom: 10%;
+    margin-bottom: 5%;
+    /*background-color:#79ADDC;*/
+}
+
+.teachersDesksWide{
+    /*background-color:#79ADDC;*/
+}
